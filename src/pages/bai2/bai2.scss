@@ -1,0 +1,103 @@
+.shop-container {
+    padding: 10px 60px;
+
+    .shop-header {
+        background-color: rgb(232, 230, 230);
+
+        .shop-header-1 {
+            padding: 10px;
+
+            .shop-header-cart {
+                display: flex;
+                position: relative;
+
+                .shop-header-cart-num {
+                    padding: 0px 7px;
+                    background-color: rgb(151, 150, 150);
+                }
+            }
+        }
+    }
+
+    .shop-list {
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .list-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+
+            .one-product {
+                height: 420px;
+                border: 1px solid;
+
+                .one-product-img {
+                    height: 70%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .one-product-desc {
+                    height: 30%;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
+    .shop-cart {
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .shop-cart-table {
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                thead {
+                    td,
+                    th {
+                        border: 1px solid #dddddd;
+                        padding: 5px;
+                        text-align: left;
+                    }
+                }
+                tbody {
+                    td,
+                    th {
+                        border: 1px solid #dddddd;
+                        padding: 5px;
+                        text-align: left;
+                    }
+                    .cart-item {
+                        display: flex;
+                        height: 80px;
+                        align-items: center;
+                        img {
+                            width: 20%;
+                            height: 100%;
+                        }
+                    }
+                    .cart-item-btn {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+            .shop-cart-total {
+                display: flex;
+                gap: 150px;
+                justify-content: center;
+                padding: 20px 0 20px 60%;
+            }
+
+        }
+    }
+}
